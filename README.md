@@ -45,7 +45,7 @@ A Proxmox cluster only acts while it has **quorum** (a majority of votes). With 
 
 | Option | How it works |
 |---|---|
-| **Vote weighting in Corosync** ✔ *(implemented)* | Main node = 1 vote, backup node = 2 votes → 3 votes in total; the backup node alone keeps a majority and its HA manager can restart the VMs |
+| **Vote weighting in Corosync** *(implemented)* | Main node = 1 vote, backup node = 2 votes → 3 votes in total; the backup node alone keeps a majority and its HA manager can restart the VMs |
 | **QDevice** *(studied)* | A lightweight external arbiter adds a third vote, so either node can survive alone |
 
 ## Validation
